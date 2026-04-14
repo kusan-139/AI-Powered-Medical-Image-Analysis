@@ -1,0 +1,15 @@
+2026-04-13 13:58:43  [INFO    ]  Main › 🔧  Setting up project …
+2026-04-13 14:02:11  [INFO    ]  Main › 🚀  Starting DEMO mode — no real dataset required
+2026-04-13 14:04:43  [INFO    ]  Main › 🚀  Starting DEMO mode — no real dataset required
+2026-04-13 14:10:08  [INFO    ]  Main › 📈  Evaluation mode | task=pneumonia
+2026-04-13 14:10:12  [INFO    ]  Evaluator › Starting full evaluation: task=pneumonia
+2026-04-13 14:10:12  [INFO    ]  Evaluator › Using MockModel for evaluation
+2026-04-13 14:10:24  [INFO    ]  Evaluator ›   Test samples: 40
+2026-04-13 14:13:35  [INFO    ]  Main › 📈  Evaluation mode | task=pneumonia
+2026-04-13 14:13:39  [INFO    ]  Evaluator › Starting full evaluation: task=pneumonia
+2026-04-13 14:13:39  [INFO    ]  Evaluator › Using MockModel for evaluation
+2026-04-13 14:13:52  [INFO    ]  Evaluator ›   Test samples: 40
+2026-04-13 14:13:52  [INFO    ]  Evaluator ›   Report saved → outputs\reports\pneumonia_eval_20260413_141352.json
+2026-04-13 14:17:43  [INFO    ]  Main › 🌐  Launching web dashboard on http://localhost:5000
+2026-04-13 14:48:02  [INFO    ]  Main › 🌐  Launching web dashboard on http://localhost:5000
+2026-04-13 14:51:48  [INFO    ]  Main › 🌐  Launching web dashboard on http://localhost:5000

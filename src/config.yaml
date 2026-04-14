@@ -1,0 +1,61 @@
+# ============================================================
+# src/config.yaml
+# Master configuration for AI Medical Image Analysis System
+# ============================================================
+
+model:
+  backbone: mobilenet_v2            # mobilenet_v2 | resnet50 | efficientnet_b0 | custom
+  pretrained: true                  # Use ImageNet weights
+  input_size: [224, 224, 3]
+  dropout: 0.4
+
+training:
+  epochs: 25
+  batch_size: 32
+  learning_rate: 0.0001
+  optimizer: adam
+  scheduler: cosine                 # cosine | step | plateau
+  early_stopping_patience: 5
+  mixed_precision: false            # Enable if on GPU
+
+data:
+  augmentation: true
+  val_split: 0.15
+  test_split: 0.10
+  num_workers: 4
+  cache: false
+
+paths:
+  data_dir:    data/
+  models_dir:  models/saved/
+  outputs_dir: outputs/
+  logs_dir:    logs/
+
+tasks:
+  pneumonia:
+    enabled: true
+    dataset: chest_xray
+    num_classes: 2
+    class_names: [Normal, Pneumonia]
+    threshold: 0.5
+  skin:
+    enabled: true
+    dataset: ham10000
+    num_classes: 7
+    class_names: [mel, nv, bcc, akiec, bkl, df, vasc]
+    threshold: 0.5
+  brain:
+    enabled: true
+    dataset: brats
+    num_classes: 1
+    model_type: unet
+
+explainability:
+  gradcam: true
+  lime: false
+  shap: false
+
+dashboard:
+  host: 0.0.0.0
+  port: 5000
+  debug: false

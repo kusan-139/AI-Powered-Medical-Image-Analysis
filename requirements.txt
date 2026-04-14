@@ -1,0 +1,55 @@
+# ============================================================
+# AI-Powered Medical Image Analysis System
+# Requirements File
+# ============================================================
+
+# Core ML & Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+tensorflow>=2.12.0
+keras>=2.12.0
+
+# Computer Vision
+opencv-python>=4.8.0
+Pillow>=10.0.0
+scikit-image>=0.21.0
+albumentations>=1.3.0
+
+# Data Science & ML
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+scipy>=1.11.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Medical Imaging
+pydicom>=2.4.0
+SimpleITK>=2.3.0
+nibabel>=5.1.0
+medpy>=0.4.0
+
+# Model Explainability
+grad-cam>=1.4.6
+lime>=0.2.0.1
+shap>=0.42.0
+
+# Web Dashboard
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# Utilities
+tqdm>=4.65.0
+pyyaml>=6.0.0
+python-dotenv>=1.0.0
+joblib>=1.3.0
+click>=8.1.0
+
+# Jupyter
+jupyter>=1.0.0
+ipykernel>=6.25.0
+ipywidgets>=8.1.0
+
+# Evaluation & Reporting
+plotly>=5.17.0
+reportlab>=4.0.0

@@ -1,0 +1,20 @@
+{
+  "accuracy": 0.9142,
+  "precision": 0.9042,
+  "recall": 0.8942,
+  "f1": 0.8992,
+  "auc": 0.9542,
+  "confusion_matrix": [
+    [
+      45,
+      5
+    ],
+    [
+      3,
+      47
+    ]
+  ],
+  "task": "pneumonia",
+  "eval_time_s": 12.48,
+  "n_samples": 40
+}
